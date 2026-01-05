@@ -12,27 +12,6 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "24724d34-6f22-307d-b193-2d2a74626e13",
-              "name": "resources.rules.python.arbitrary-sleep",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.arbitrary-sleep"
-              },
-              "fullDescription": {
-                "text": "time.sleep() call; did you mean to leave this in?"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "time.sleep() call; did you mean to leave this in?\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "time.sleep() call; did you mean to leave this in?\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
               "id": "be6b2f35-69ca-3f49-afe0-e7fd1fe6f12f",
               "name": "resources.rules.python.arbitrary-sleep",
               "shortDescription": {
@@ -54,7 +33,7 @@
               }
             },
             {
-              "id": "b9c142a0-59e6-3fc5-8591-ef43cf911bef",
+              "id": "24724d34-6f22-307d-b193-2d2a74626e13",
               "name": "resources.rules.python.arbitrary-sleep",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.python.arbitrary-sleep"
@@ -96,42 +75,21 @@
               }
             },
             {
-              "id": "0f0db57a-28a9-3ff3-a514-977b00727cd9",
-              "name": "resources.rules.python.dlint-catastrophic-redos",
+              "id": "b9c142a0-59e6-3fc5-8591-ef43cf911bef",
+              "name": "resources.rules.python.arbitrary-sleep",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
+                "text": "Opengrep Finding: resources.rules.python.arbitrary-sleep"
               },
               "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+                "text": "time.sleep() call; did you mean to leave this in?"
               },
               "defaultConfiguration": {
                 "enabled": true,
                 "level": "error"
               },
               "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high"
-              }
-            },
-            {
-              "id": "d543ac71-bf3f-3a7a-a3bd-b4c2610b5860",
-              "name": "resources.rules.python.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+                "text": "time.sleep() call; did you mean to leave this in?\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "time.sleep() call; did you mean to leave this in?\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
               },
               "properties": {
                 "precision": "very-high"
@@ -139,6 +97,27 @@
             },
             {
               "id": "df4960bd-11d2-35c7-8600-d9136ef76147",
+              "name": "resources.rules.python.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "0f0db57a-28a9-3ff3-a514-977b00727cd9",
               "name": "resources.rules.python.dlint-catastrophic-redos",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
@@ -180,6 +159,27 @@
               }
             },
             {
+              "id": "d543ac71-bf3f-3a7a-a3bd-b4c2610b5860",
+              "name": "resources.rules.python.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
               "id": "ac5751c1-904e-3519-86a1-2459014be77c",
               "name": "resources.rules.python.arbitrary-sleep",
               "shortDescription": {
@@ -201,165 +201,46 @@
               }
             },
             {
-              "id": "c7243d19-dadc-3f85-a168-ef29f12f99c9",
-              "name": "Problematic C function detected (memcpy)",
+              "id": "a49ceeea-1ca7-3d5b-b986-b15ff75acc25",
+              "name": "\"Prohibited C Function Identified\"",
               "helpUri": "https://www.glog.ai/",
               "help": {
                 "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible overlap between the source and destination memory regions in the memory copy operation. The analysis detected that both the source and destination may refer to overlapping regions within the same base object, which can cause undefined behavior when using the standard memory copy function. The verdict for this call site is also marked as genuine. There are no explicit checks or guards in the code to prevent this overlap, and the use of the standard memory copy function is unsafe in this context. The destination and source are both non-null, but the overlap risk is the primary concern here.\n\n## In Context Remediation 1\nTo prevent undefined behavior when the source and destination memory regions may overlap, add a runtime check to ensure they do not overlap before calling the memory copy function. If overlap is possible, use a safe memory move function instead.\n\n```c\nif ((char *)&radio->interrupts + sizeof(cariboulite_radio_irq_st) <= (char *)src ||\n    (char *)src + sizeof(cariboulite_radio_irq_st) <= (char *)&radio->interrupts) {\n    memcpy(&radio->interrupts, src, sizeof(cariboulite_radio_irq_st));\n} else {\n    memmove(&radio->interrupts, src, sizeof(cariboulite_radio_irq_st));\n}\n```\nWhere `src` is evaluated as `(radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24)`.\n\n\n## In Context Remediation 2\nAlternatively, replace the memory copy function with a safe memory move function that handles overlapping regions correctly:\n\n```c\nmemmove(&radio->interrupts, (radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24), sizeof(cariboulite_radio_irq_st));\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Glossary: Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-787: Out-of-bounds Write](https://cwe.mitre.org/data/definitions/787.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n\n___\n"
+                "markdown": "## Description\n\n\"Prohibited C Function Identified\" is a vulnerability that arises when a C++ program uses a function that is considered unsafe or insecure. In this case, the function `fopen()` is used with the \"w\" mode, which opens a file for writing. If the file already exists, its contents are discarded and the file is treated as a new empty file. This can lead to potential data loss if not handled properly.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use safer alternatives to `fopen()`. In C++, the safer alternative is to use the file stream classes (`fstream`, `ifstream`, `ofstream`) provided by the Standard Library. These classes provide better control over file operations and are less prone to errors.\n\n## Source Code Fix Recommendation\n\nHere is a recommended fix using `ofstream`:\n\n```cpp\n#include <fstream>\n\nstd::ofstream file(filename);\nif (!file) {\n    // Handle error\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library:\n\n- `<fstream>`: This is a standard C++ library that provides facilities for file-based input and output.\n\n## References\n\n- [OWASP Prohibited C Functions](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html#prohibited-c-library-functions)\n- [CWE-676: Use of Potentially Dangerous Function](https://cwe.mitre.org/data/definitions/676.html)"
               },
               "properties": {
                 "cwe": [
                   {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-787",
-                    "url": "https://cwe.mitre.org/data/definitions/787.html"
+                    "id": "CWE-676",
+                    "url": "https://cwe.mitre.org/data/definitions/676.html"
                   }
                 ],
-                "severity": "LOW",
+                "severity": "MEDIUM",
                 "kind": "FAIL",
                 "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-787"
+                  "CWE-676"
                 ]
               }
             },
             {
-              "id": "ddb6b915-3c3d-3f07-943a-d6566642738f",
-              "name": "Problematic C function detected (memcpy)",
+              "id": "e7f4cdb0-194b-3405-a75e-2419864dc261",
+              "name": "\"Prohibited C Function Identified\"",
               "helpUri": "https://www.glog.ai/",
               "help": {
                 "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of null pointers being passed as either the source or destination to the memory copy operation. The destination pointer is a raw pointer and there is no evidence of a guard or check to ensure it is not null before the operation. The source is not likely to be null, but the destination may be, which can lead to a crash or other unpredictable behavior. The absence of overlap between source and destination reduces the risk of memory corruption, but the lack of null pointer checks is a significant concern. The probability of this being a false positive is very low due to the combination of these factors.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is null.\n\n```cpp\nif (meta != NULL) {\n    memcpy(meta, _read_metadata, (size_t)ret);\n} else {\n    // Handle error: destination pointer is null\n}\n```\n\nThis prevents the function from attempting to write to a null pointer, which would otherwise cause a crash or undefined behavior.\n\n## In Context Remediation 2\nIf the function expects the destination pointer to always be valid, consider adding an assertion to catch programming errors during development:\n\n```cpp\nassert(meta != NULL);\nmemcpy(meta, _read_metadata, (size_t)ret);\n```\n\nThis will terminate the program with a clear error message if the pointer is unexpectedly null, making debugging easier.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [NIST Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n\n___\n"
+                "markdown": "## Description\n\n\"Prohibited C Function Identified\" is a vulnerability that arises when a C++ program uses a function that is considered unsafe or insecure. In this case, the function `fopen()` is used with the \"w\" mode, which opens a file for writing. If the file already exists, its contents are discarded and the file is treated as a new empty file. This can lead to potential data loss if not handled properly.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use safer alternatives to `fopen()`. In C++, the safer alternative is to use the file stream classes (`fstream`, `ifstream`, `ofstream`) provided by the Standard Library. These classes provide better control over file operations and are less prone to errors.\n\n## Source Code Fix Recommendation\n\nHere is a recommended fix using `ofstream`:\n\n```cpp\n#include <fstream>\n\nstd::ofstream file(filename);\nif (!file) {\n    // Handle error\n}\n```\n\n## Library Dependencies\n\nThe code example requires the following library:\n\n- `<fstream>`: This is a standard C++ library that provides facilities for file-based input and output.\n\n## References\n\n- [OWASP Prohibited C Functions](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html#prohibited-c-library-functions)\n- [CWE-676: Use of Potentially Dangerous Function](https://cwe.mitre.org/data/definitions/676.html)"
               },
               "properties": {
                 "cwe": [
                   {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
+                    "id": "CWE-676",
+                    "url": "https://cwe.mitre.org/data/definitions/676.html"
                   }
                 ],
-                "severity": "LOW",
+                "severity": "MEDIUM",
                 "kind": "FAIL",
                 "tags": [
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "6ddcc282-846e-3bbb-a8b2-3b939b26914b",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of a null pointer being passed as the source to the memory copy operation. The analysis did not detect any explicit checks to ensure that the source pointer is not null before the memory copy is performed. The destination is an address-of expression, which is always non-null, but the source pointer may be null, leading to undefined behavior if this occurs. The absence of overlap between source and destination reduces the risk of other issues, but the lack of null checks is a significant concern. The probability of this being a false positive is low because the analysis directly observed that the source pointer could be null and there are no guards in place.\n\n## In Context Remediation\nBefore performing the memory copy operation, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source pointer is null.\n\n```c\nif (hard_dev != NULL) {\n    memcpy(&dev->chips[new_chip_index].hard_dev, hard_dev, sizeof(io_utils_hard_spi_st));\n} else {\n    // Handle error: source pointer is null\n    // For example, log an error or return an error code\n}\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "cf929797-df48-3d64-a5b2-28376ddbf33c",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility that either the source or destination pointer may be null when the memory copy operation is performed. There are no explicit checks in the code to ensure that the pointers are valid before calling the memory copy function. The destination and source are both pointers, and there is no evidence of bounds or capacity checks. Additionally, the analysis did not detect any guards or assignments that would guarantee the pointers are non-null. This means that if either pointer is null at runtime, the program could crash or exhibit unpredictable behavior. The risk is further increased because the function verdict is marked as 'GENUINE', confirming the high confidence in this issue.\n\n## In Context Remediation\nBefore performing the memory copy operation, add explicit checks to ensure that both the source and destination pointers are not null. This prevents undefined behavior and potential crashes if either pointer is invalid.\n\n```c\nif (p != NULL && s_p != NULL) {\n    memcpy(p, s_p, n);\n} else {\n    // Handle error: one or both pointers are null\n}\n```\n\nIf the function should never receive null pointers, consider adding assertions or returning an error code if a null pointer is detected. This makes the contract of the function clear and prevents silent failures.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  },
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476",
-                  "CWE-119"
-                ]
-              }
-            },
-            {
-              "id": "86f2987b-bc22-31e8-9d65-bdebd57877de",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility that the destination pointer may be null, and there are no explicit checks to prevent this. The analysis shows that the destination pointer ('info') could be null at the point of the memory copy operation, and there is no guard in place to ensure it is valid. The source pointer is safe, as it is always non-null due to being the address of a structure member. The use of 'memcpy' with a potentially null destination pointer can lead to a crash or other undefined behavior. The probability of this being a false positive is low, as the risk is clearly present and not mitigated by any checks or safe usage patterns.\n\n## In Context Remediation\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is invalid.\n\n```c\nif (info != NULL) {\n    memcpy(info, &sys->board_info, sizeof(hat_board_info_st));\n} else {\n    // Handle error: destination pointer is null\n    // For example, log an error or return an error code\n}\n```\n\nThis check ensures that the function does not attempt to write to a null pointer, which would otherwise cause a crash or undefined behavior.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "f7cfbeb6-8f6b-3b9d-bfd1-9c52b4ad1645",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The source buffer (msg) may be null at this location, as there is no explicit check to ensure it is not null before the memory copy operation. The destination buffer is an array, so it cannot be null, but the lack of a null check on the source pointer is a significant risk. There is no evidence of overlapping memory regions, and the copy size is determined by a calculation (msgbits/8) that is not directly tied to the destination's capacity, increasing the risk of misuse. No explicit guard or null-termination is present. These factors all contribute to the assessment that this is a real issue that could lead to a crash or other undefined behavior if the source pointer is null.\n\n## In Context Remediation\nBefore performing the memory copy, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source is null.\n\n```c\nif (msg != NULL) {\n    memcpy(aux, msg, msgbits/8);\n} else {\n    // Handle error: source pointer is null\n    // e.g., log an error, return an error code, or take other appropriate action\n}\n```\n\nThis check prevents the function from attempting to copy from a null pointer, which would otherwise result in a crash or undefined behavior.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "f0f94a9f-0a69-3b69-bc17-163d1d3184c5",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the code uses a memory copy operation where the source and destination buffers may overlap. Specifically, there is evidence that the source and destination may refer to the same memory region due to an earlier assignment, which can result in undefined behavior when using the standard memory copy function. Additionally, there is a risk that the source pointer may be null, as there is no explicit check to ensure it is valid before the copy operation. The destination buffer is an array, so it is unlikely to be null. The classification and verdict both indicate a high-confidence issue that should be addressed to prevent potential memory corruption or crashes.\n\n## In Context Remediation\nTo prevent undefined behavior when the source and destination memory regions may overlap, add a check to ensure they do not overlap before calling the memory copy function. If overlap is possible, use a safe memory move function instead. For example:\n\n```c\nif (mm->msg != msg) {\n    memcpy(mm->msg, msg, MODE_S_LONG_MSG_BYTES);\n} else {\n    // No action needed, or handle as appropriate\n}\n```\nAlternatively, if overlap is possible and you always want to perform the copy, use a safe memory move function:\n\n```c\nmemmove(mm->msg, msg, MODE_S_LONG_MSG_BYTES);\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-787: Out-of-bounds Write](https://cwe.mitre.org/data/definitions/787.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-787",
-                    "url": "https://cwe.mitre.org/data/definitions/787.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-787"
+                  "CWE-676"
                 ]
               }
             },
@@ -383,6 +264,20 @@
                 "tags": [
                   "CWE-476"
                 ]
+              }
+            },
+            {
+              "id": "f7cfbeb6-8f6b-3b9d-bfd1-9c52b4ad1645",
+              "name": "Problematic C function detected (memcpy)",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The source buffer (msg) may be null at this location, as there is no explicit check to ensure it is not null before the memory copy operation. The destination buffer is an array, so it cannot be null, but the lack of a null check on the source pointer is a significant risk. There is no evidence of overlapping memory regions, and the copy size is determined by a calculation (msgbits/8) that is not directly tied to the destination's capacity, increasing the risk of misuse. No explicit guard or null-termination is present. These factors all contribute to the assessment that this is a real issue that could lead to a crash or other undefined behavior if the source pointer is null.\n\n## In Context Remediation\nBefore performing the memory copy, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source is null.\n\n```c\nif (msg != NULL) {\n    memcpy(aux, msg, msgbits/8);\n} else {\n    // Handle error: source pointer is null\n    // e.g., log an error, return an error code, or take other appropriate action\n}\n```\n\nThis check prevents the function from attempting to copy from a null pointer, which would otherwise result in a crash or undefined behavior.\n\n___\n"
+              },
+              "properties": {
+                "cwe": [],
+                "severity": "LOW",
+                "kind": "FAIL"
               }
             },
             {
@@ -435,6 +330,20 @@
               }
             },
             {
+              "id": "86f2987b-bc22-31e8-9d65-bdebd57877de",
+              "name": "Problematic C function detected (memcpy)",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility that the destination pointer may be null, and there are no explicit checks to prevent this. The analysis shows that the destination pointer ('info') could be null at the point of the memory copy operation, and there is no guard in place to ensure it is valid. The source pointer is safe, as it is always non-null due to being the address of a structure member. The use of 'memcpy' with a potentially null destination pointer can lead to a crash or other undefined behavior. The probability of this being a false positive is low, as the risk is clearly present and not mitigated by any checks or safe usage patterns.\n\n## In Context Remediation\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is invalid.\n\n```c\nif (info != NULL) {\n    memcpy(info, &sys->board_info, sizeof(hat_board_info_st));\n} else {\n    // Handle error: destination pointer is null\n    // For example, log an error or return an error code\n}\n```\n\nThis check ensures that the function does not attempt to write to a null pointer, which would otherwise cause a crash or undefined behavior.\n\n___\n"
+              },
+              "properties": {
+                "cwe": [],
+                "severity": "LOW",
+                "kind": "FAIL"
+              }
+            },
+            {
               "id": "48dbf12d-eb92-368c-817f-0c0a4b16ae55",
               "name": "Problematic C function detected (memcpy)",
               "helpUri": "https://www.glog.ai/",
@@ -458,6 +367,55 @@
                 "tags": [
                   "CWE-119",
                   "CWE-476"
+                ]
+              }
+            },
+            {
+              "id": "743e1229-d681-3ba2-9312-5dcdd794b8a0",
+              "name": "Detected Prohibited C Function",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\n\"Detected Prohibited C Function\" vulnerability refers to the use of insecure C library functions in C++ code. These functions are often prone to buffer overflow attacks, format string vulnerabilities, or other types of security issues. In this case, the `fopen` function is used, which can lead to vulnerabilities if the `fname` parameter is not properly validated or controlled.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use safer alternatives to these functions, or to perform proper input validation and error checking. In the case of `fopen`, it is important to ensure that the `fname` parameter is a valid and secure file path, and that the file is properly handled after opening.\n\n## Source Code Fix Recommendation\n\n```cpp\n#include <fstream>\n\nstd::ifstream file(fname, std::ios::binary);\nif (!file) {\n    // Handle error\n}\n```\n\nIn this example, the `std::ifstream` class from the C++ Standard Library is used instead of `fopen`. This class provides a safer and more convenient interface for file I/O.\n\n## Library Dependencies\n\nThe code example requires the following library:\n\n- `<fstream>`\n\n## References\n\n- [CWE-676: Use of Potentially Dangerous Function](https://cwe.mitre.org/data/definitions/676.html)"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-676",
+                    "url": "https://cwe.mitre.org/data/definitions/676.html"
+                  }
+                ],
+                "severity": "MEDIUM",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-676"
+                ]
+              }
+            },
+            {
+              "id": "cf929797-df48-3d64-a5b2-28376ddbf33c",
+              "name": "Problematic C function detected (memcpy)",
+              "helpUri": "https://www.glog.ai/",
+              "help": {
+                "text": "",
+                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility that either the source or destination pointer may be null when the memory copy operation is performed. There are no explicit checks in the code to ensure that the pointers are valid before calling the memory copy function. The destination and source are both pointers, and there is no evidence of bounds or capacity checks. Additionally, the analysis did not detect any guards or assignments that would guarantee the pointers are non-null. This means that if either pointer is null at runtime, the program could crash or exhibit unpredictable behavior. The risk is further increased because the function verdict is marked as 'GENUINE', confirming the high confidence in this issue.\n\n## In Context Remediation\nBefore performing the memory copy operation, add explicit checks to ensure that both the source and destination pointers are not null. This prevents undefined behavior and potential crashes if either pointer is invalid.\n\n```c\nif (p != NULL && s_p != NULL) {\n    memcpy(p, s_p, n);\n} else {\n    // Handle error: one or both pointers are null\n}\n```\n\nIf the function should never receive null pointers, consider adding assertions or returning an error code if a null pointer is detected. This makes the contract of the function clear and prevents silent failures.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
+              },
+              "properties": {
+                "cwe": [
+                  {
+                    "id": "CWE-476",
+                    "url": "https://cwe.mitre.org/data/definitions/476.html"
+                  },
+                  {
+                    "id": "CWE-119",
+                    "url": "https://cwe.mitre.org/data/definitions/119.html"
+                  }
+                ],
+                "severity": "LOW",
+                "kind": "FAIL",
+                "tags": [
+                  "CWE-476",
+                  "CWE-119"
                 ]
               }
             },
@@ -489,19 +447,15 @@
               }
             },
             {
-              "id": "942b6323-8397-3908-860f-754520add96b",
+              "id": "ddb6b915-3c3d-3f07-943a-d6566642738f",
               "name": "Problematic C function detected (memcpy)",
               "helpUri": "https://www.glog.ai/",
               "help": {
                 "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The code copies data from one buffer to another using a memory copy operation, but there are no explicit checks to ensure that either the source or destination pointers are not null before the operation. If either pointer is null, this will result in undefined behavior, potentially leading to a crash or exploitable condition. The destination is a pointer type with no statically known capacity, and the size argument is not derived from a known safe bound. Additionally, the analysis confirms that both the source and destination pointers may be null at this point in the code, and there are no guards in place to prevent this. There is no risk of overlapping memory regions, but the lack of null checks is a significant issue.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, add explicit checks to ensure that both the source and destination pointers are not null. This prevents undefined behavior due to null pointer dereference.\n\n```c\nif (hat && hat->dt_data.dt_data && atom_data) {\n    memcpy(hat->dt_data.dt_data, atom_data, hat->dt_data.dt_data_size);\n}\n```\n\nThis ensures that the memory copy only occurs when all pointers are valid, preventing crashes or security issues.\n\n## In Context Remediation 2\nIf you want to handle the error case explicitly, you can add an error handling branch to log or return an error code if any pointer is null:\n\n```c\nif (!hat || !hat->dt_data.dt_data || !atom_data) {\n    // Handle error: log, return, or set an error code\n    return;\n}\nmemcpy(hat->dt_data.dt_data, atom_data, hat->dt_data.dt_data_size);\n```\n\nThis approach makes the failure explicit and allows for safer error handling.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n\n___\n"
+                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of null pointers being passed as either the source or destination to the memory copy operation. The destination pointer is a raw pointer and there is no evidence of a guard or check to ensure it is not null before the operation. The source is not likely to be null, but the destination may be, which can lead to a crash or other unpredictable behavior. The absence of overlap between source and destination reduces the risk of memory corruption, but the lack of null pointer checks is a significant concern. The probability of this being a false positive is very low due to the combination of these factors.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is null.\n\n```cpp\nif (meta != NULL) {\n    memcpy(meta, _read_metadata, (size_t)ret);\n} else {\n    // Handle error: destination pointer is null\n}\n```\n\nThis prevents the function from attempting to write to a null pointer, which would otherwise cause a crash or undefined behavior.\n\n## In Context Remediation 2\nIf the function expects the destination pointer to always be valid, consider adding an assertion to catch programming errors during development:\n\n```cpp\nassert(meta != NULL);\nmemcpy(meta, _read_metadata, (size_t)ret);\n```\n\nThis will terminate the program with a clear error message if the pointer is unexpectedly null, making debugging easier.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [NIST Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n\n___\n"
               },
               "properties": {
                 "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
                   {
                     "id": "CWE-476",
                     "url": "https://cwe.mitre.org/data/definitions/476.html"
@@ -510,140 +464,7 @@
                 "severity": "LOW",
                 "kind": "FAIL",
                 "tags": [
-                  "CWE-119",
                   "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "51cebc80-e97f-3ae7-aba4-a325b96b5c10",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of a null pointer being passed as the source to the memory copy operation. The analysis did not detect any explicit checks to ensure that the source pointer is not null before the memory copy occurs. The destination is an address-of expression, which guarantees it is not null, but the source pointer may be null, leading to undefined behavior if this occurs. There is no evidence of bounds or capacity checks, and no explicit null-termination or guards are present. The risk is further supported by the verdict marking this as a genuine issue.\n\n## In Context Remediation\nBefore performing the memory copy, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source pointer is invalid.\n\n```c\nif (atom_data != NULL) {\n    memcpy(&hat->gpiomap, atom_data, GPIO_MAP_SIZE);\n} else {\n    // Handle error: source pointer is null\n    // e.g., log an error, return an error code, or take other appropriate action\n}\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  },
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476",
-                  "CWE-119"
-                ]
-              }
-            },
-            {
-              "id": "632c69a7-3852-308c-89df-ee38dd0ff436",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict confirms it as genuine. The code copies data from a source pointer to a destination buffer, but there is no explicit check to ensure the source pointer is not null. If the source pointer is null, calling this function will result in undefined behavior and potentially crash the program. The destination buffer is a statically allocated array, so it is always non-null, but the source pointer is not guaranteed to be valid. There are no guards or checks in place to prevent this issue, and the length used for copying is not derived from the destination's capacity, which increases the risk. The probability of this being a false positive is low because the analysis shows a real risk of dereferencing a null pointer.\n\n## In Context Remediation 1\nBefore copying data from the source pointer to the destination buffer, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior:\n\n```c\nif (it != NULL) {\n    memcpy(&hat->vinf.pstr, it, hat->vinf.pslen);\n} else {\n    // Handle error: source pointer is null\n}\n```\nThis prevents the function from attempting to copy from a null pointer, which would otherwise cause a crash or undefined behavior.\n\n## In Context Remediation 2\nIf the function should never receive a null source pointer, add an assertion to catch programming errors during development:\n\n```c\nassert(it != NULL);\nmemcpy(&hat->vinf.pstr, it, hat->vinf.pslen);\n```\nThis will terminate the program with a clear error message if the source pointer is ever null, making it easier to detect and fix bugs early.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  },
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476",
-                  "CWE-119"
-                ]
-              }
-            },
-            {
-              "id": "c641b40f-d672-300b-8ef3-349608b20d8d",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The source pointer used in the memory copy operation may be null, as there is no explicit check to ensure it is valid before the operation. The destination buffer is a statically allocated array, so it is always non-null. There are no additional safety guards or null-termination after the copy. The absence of overlap between source and destination reduces the risk of memory corruption, but the potential for a null source pointer remains a critical issue that can lead to a crash or undefined behavior.\n\n## In Context Remediation 1\nBefore performing the memory copy, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source is invalid.\n\n```c\nif (it != NULL) {\n    memcpy(&hat->vinf.vstr, it, hat->vinf.vslen);\n} else {\n    // Handle error: source pointer is null\n    // For example, set destination to empty string or log an error\n    hat->vinf.vstr[0] = '\\0';\n}\n```\n\nThis approach prevents the function from attempting to dereference a null pointer, which would otherwise cause a crash or unpredictable behavior.\n\n## In Context Remediation 2\nIf the function should always receive a valid source pointer, consider adding an assertion or error handling to catch programming errors early:\n\n```c\nassert(it != NULL);\nmemcpy(&hat->vinf.vstr, it, hat->vinf.vslen);\n```\n\nAlternatively, return an error code if the source is null:\n\n```c\nif (it == NULL) {\n    return ERROR_NULL_POINTER;\n}\nmemcpy(&hat->vinf.vstr, it, hat->vinf.vslen);\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Glossary: Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "84339129-0b5b-3903-bd7a-e15cdb66fbfc",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The code copies data from a source pointer to a destination structure using a memory copy operation, but there is no explicit check to ensure that the source pointer is not null. If the source pointer is null at runtime, this will result in undefined behavior and potentially a crash or security issue. The destination is a structure and is always non-null due to the use of the address-of operator, so the main risk is with the source pointer. There is no evidence of overlapping memory regions, and the size argument is a constant, which does not affect the null pointer risk. The absence of a guard or null check for the source pointer is the primary concern.\n\n## In Context Remediation\nBefore performing the memory copy operation, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source pointer is invalid.\n\n```c\nif (it != NULL) {\n    memcpy(&hat->vinf, it, VENDOR_STATIC_SIZE);\n} else {\n    // Handle error: source pointer is null\n    // For example, log an error or return an error code\n}\n```\n\nThis check ensures that the memory copy only occurs when the source pointer is valid, preventing a potential crash or security issue due to null pointer dereference.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "d65d9246-d237-3a5e-b926-13eb255d8236",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the code uses a memory copy operation where the source and destination memory regions may overlap. Specifically, the source pointer ('location') may alias the destination ('&hat->header'), as indicated by the observed assignment of 'location' to a region within 'hat->read_buffer'. Using memcpy in such cases leads to undefined behavior according to the C standard. Additionally, there is a risk that the source pointer may be null, as there is no explicit check to ensure it is valid before the copy. The destination is always valid as it is the address of a structure member. The use of 'sizeof(hat->header)' as the copy size is correct, but does not mitigate the overlap risk. These factors confirm the presence of a real issue that could lead to unpredictable program behavior or crashes.\n\n## In Context Remediation 1\nTo prevent undefined behavior when the source and destination memory regions may overlap, add a check to ensure they do not overlap before calling the memory copy function. If overlap is possible, use a safe copy function such as memmove, which is designed to handle overlapping regions safely. For example:\n\n```c\nif ((location + sizeof(hat->header) <= (uint8_t *)&hat->header) ||\n    ((uint8_t *)&hat->header + sizeof(hat->header) <= location)) {\n    memcpy(&hat->header, location, sizeof(hat->header));\n} else {\n    memmove(&hat->header, location, sizeof(hat->header));\n}\n```\nThis code checks if the source and destination do not overlap. If they do, it uses memmove instead of memcpy.\n\n## In Context Remediation 2\nAlternatively, replace the memory copy operation with memmove directly, which is safe for overlapping memory regions:\n\n```c\nmemmove(&hat->header, location, sizeof(hat->header));\n```\nThis change ensures that the copy is performed correctly even if the source and destination overlap.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-787: Out-of-bounds Write](https://cwe.mitre.org/data/definitions/787.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-787",
-                    "url": "https://cwe.mitre.org/data/definitions/787.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-787"
                 ]
               }
             },
@@ -702,20 +523,6 @@
               }
             },
             {
-              "id": "baeb7f04-a7ee-3a9c-803a-2b20362d6414",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the analysis identified a risk of undefined behavior due to the possibility that the destination pointer may be null at the point of the memory copy operation. There are no explicit checks to ensure that the destination pointer is valid before performing the copy. The source expression is considered safe as it is not a pointer and is likely an object or array, but the destination pointer could be null, which would result in a crash or undefined behavior if the copy is attempted. The absence of a guard or validation for the destination pointer increases the risk. The classification and verdict both indicate a high-confidence issue that should be addressed.\n\n## In Context Remediation\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to validate the destination buffer pointer before calling the memory copy function. For example:\n\n```cpp\nif (buf_ != nullptr) {\n    memcpy(buf_, data + l, (len - l) * sizeof(T));\n} else {\n    // Handle error: destination buffer is null\n}\n```\nThis prevents undefined behavior by ensuring the destination is valid before copying.\n\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
               "id": "6c15f579-3ba0-3cd6-887b-7096230d74d0",
               "name": "Problematic C function detected (memcpy)",
               "helpUri": "https://www.glog.ai/",
@@ -727,281 +534,6 @@
                 "cwe": [],
                 "severity": "LOW",
                 "kind": "FAIL"
-              }
-            },
-            {
-              "id": "d555725b-7ecb-3b81-80df-ef17ee426368",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The code copies memory from a source pointer to a destination, but there is no explicit check to ensure that the source pointer is not null. If the source pointer is null, this will result in undefined behavior and potentially a crash or security issue. The destination appears to be a valid object or array, reducing the risk on that side. There is no evidence of overlapping memory regions, which is good, but the lack of a null check on the source pointer is a significant concern.\n\n## In Context Remediation\nBefore copying memory, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source pointer is null.\n\n```c\nif (data != NULL) {\n    memcpy (new_node->data, data, len);\n} else {\n    // Handle error: source pointer is null\n    // For example, set an error code or return early\n}\n```\n\nThis prevents undefined behavior by ensuring the source pointer is valid before performing the memory copy. Always handle the error case appropriately for your application's logic.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "327e040e-d312-3c03-a795-d2f0315e177e",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the absence of explicit null pointer checks for the destination or source pointers. The code copies memory from one location to another using a memory copy function, but there is no evidence that the destination pointer is guaranteed to be valid and non-null at the point of use. The analysis also notes that the destination pointer may be null, which could lead to a crash or undefined behavior if the function is called with a null destination. The source pointer is less of a concern here, as it is likely an object or array, but the lack of a guard for the destination is a significant risk. No overlap between source and destination is detected, and the length argument is not derived from a known safe capacity, further increasing the risk.\n\n## In Context Remediation\nBefore performing the memory copy, ensure that both the destination and source pointers are not null, and that the length is valid. Add explicit checks to prevent undefined behavior:\n\n```c\nif (data != NULL && node != NULL && node->data != NULL && node->len > 0) {\n    memcpy(data, node->data, node->len);\n}\n```\nThis ensures that the memory copy only occurs when all pointers are valid and the length is positive, preventing null pointer dereference and potential crashes.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "b2a3ca6c-306a-33fb-abc4-3a8859be1deb",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict is marked as genuine. The destination pointer may be null at this call site, and there are no explicit checks to ensure it is valid before calling the memory copy operation. The source pointer is less of a concern here, as it is not likely to be null. The absence of overlap between source and destination reduces the risk of memory corruption, but the lack of null pointer validation for the destination is a critical issue that can lead to crashes or unpredictable behavior. No additional safety mechanisms, such as bounds checks or explicit null checks, are present.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to validate the destination pointer and handle the error appropriately if it is null. For example:\n\n```c\nif (data != NULL) {\n    memcpy(data, node->data, node->len);\n} else {\n    // Handle error: destination pointer is null\n    // e.g., log an error, return an error code, or abort\n}\n```\n\nThis prevents undefined behavior due to null pointer dereference and makes the code more robust.\n\n## In Context Remediation 2\nIf both the source and destination pointers could potentially be null, add checks for both before the memory copy operation:\n\n```c\nif (data != NULL && node != NULL && node->data != NULL) {\n    memcpy(data, node->data, node->len);\n} else {\n    // Handle error: one or more pointers are null\n    // e.g., log an error, return an error code, or abort\n}\n```\n\nThis ensures that neither pointer is null, further reducing the risk of undefined behavior.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Glossary: Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "b955b6af-f03e-3a37-85be-8b9b0269c4fa",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the analysis identified a risk of undefined behavior due to the possibility that the source pointer (buffer) may be null when the memory copy operation is performed. There are no explicit checks in the code to ensure that the source pointer is valid before calling the memory copy function. The destination is not a pointer, so it is unlikely to be null, but the source pointer is not guaranteed to be non-null. This can lead to a crash or other unpredictable behavior if a null pointer is dereferenced. The absence of overlap between source and destination reduces the risk of data corruption, but the lack of null pointer validation is a critical issue that must be addressed.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the source pointer is not null. Add an explicit check to validate the source pointer and handle the error appropriately if it is null. For example:\n\n```c\nif (buffer != NULL) {\n    memcpy(q->items[q->head].data, buffer, data_size);\n} else {\n    // Handle error: source buffer is null\n    // For example, log an error or return an error code\n}\n```\n\nThis prevents undefined behavior by ensuring that the memory copy is only performed when the source pointer is valid.\n\n## In Context Remediation 2\nIf the function is expected to always receive a valid source pointer, document this requirement clearly and consider using assertions in debug builds to catch programming errors early:\n\n```c\nassert(buffer != NULL);\nmemcpy(q->items[q->head].data, buffer, data_size);\n```\n\nHowever, assertions should not be used as a substitute for proper error handling in production code.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [NIST Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "0b9da9b4-e4d4-326b-984a-2e4506c5e138",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer dereference, and the verdict for this call site is marked as genuine. The code copies data from a source buffer to a destination, but there is no evidence of a check to ensure that the source pointer is not null before the memory copy operation. The analysis also confirms that the source pointer may be null, which could lead to a crash or other undefined behavior if this situation occurs at runtime. The destination is likely a valid object or array, so the main risk is with the source pointer. There is no indication of overlapping memory regions, and the count argument is not derived from the destination's capacity, which means there is no additional safety from those factors. The absence of a guard or explicit null check for the source pointer is the primary concern.\n\n## In Context Remediation\nBefore performing the memory copy, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source is null.\n\n```c\nif (buffer != NULL) {\n    memcpy(q->items[q->head].data, buffer, data_size);\n} else {\n    // Handle error: source buffer is null\n    // For example, log an error or return an error code\n}\n```\n\nThis check prevents the function from attempting to copy from a null pointer, which would otherwise result in a crash or undefined behavior.\n\n___\n"
-              },
-              "properties": {
-                "cwe": [],
-                "severity": "LOW",
-                "kind": "FAIL"
-              }
-            },
-            {
-              "id": "6401e98b-3546-3a29-a95c-e6d51d2abb4d",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of a null source pointer, and the verdict is marked as genuine. The code copies data from a source buffer to a destination buffer using a memory copy operation, but there is no explicit check to ensure that the source pointer is not null before the operation. If the source pointer is null, this can lead to a crash or other undefined behavior. The destination is not likely to be null, as it is an offset into an object or array, but the source pointer is not protected by any guard. The absence of overlap between source and destination reduces the risk of other issues, but the lack of null checks for the source pointer is a significant concern.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, add an explicit check to ensure that the source pointer (`buffer`) is not null. This prevents undefined behavior if the pointer is invalid. For example:\n\n```c\nif (buffer != NULL) {\n    memcpy(chunk_tx + 2, buffer, size);\n} else {\n    // Handle error: buffer is null\n}\n```\nThis check ensures that the memory copy only occurs when the source pointer is valid, preventing crashes or undefined behavior due to null pointer dereference.\n\n## In Context Remediation 2\nIf the function or context allows, you can also add an assertion to catch null pointers during development:\n\n```c\nassert(buffer != NULL);\nmemcpy(chunk_tx + 2, buffer, size);\n```\nThis will terminate the program with an error if the source pointer is null, making it easier to catch bugs during testing.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [NIST Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "cec4b70a-edb9-3401-ada0-98e67df2b54e",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to possible null pointer usage, and the verdict is marked as genuine. The destination buffer is a pointer and may be null at this point in the code, as there are no explicit checks to ensure it is valid before the memory copy operation. The source expression is not a pointer and is unlikely to be null, reducing risk from the source side. However, the absence of a guard for the destination pointer means that if it is null, calling memcpy will result in undefined behavior, potentially leading to a crash or security issue. The count argument is a variable and not directly tied to the buffer's capacity, which does not mitigate the risk. The analysis did not detect any overlap between source and destination, so overlap is not a concern here.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is invalid.\n\n```c\nif (buffer != NULL) {\n    memcpy(buffer, chunk_rx + 2, size);\n} else {\n    // Handle error: buffer is null\n}\n```\nThis prevents the function from attempting to copy memory to a null destination, which would otherwise cause a crash or undefined behavior.\n\n## In Context Remediation 2\nIf the function expects the destination pointer to always be valid, add an assertion to catch programming errors during development. This is not a runtime fix, but it helps detect issues early.\n\n```c\n#include <assert.h>\nassert(buffer != NULL);\nmemcpy(buffer, chunk_rx + 2, size);\n```\nThis will terminate the program with an error message if the buffer is null, making it easier to identify and fix the root cause during testing.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "68cc90a0-221b-3c9d-aa66-e6e6f9c0e2a6",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the code copies data from one structure to another using a memory copy operation, but there is no evidence that the destination pointer is checked for null before the operation. The source pointer is safe, as it is the address of a structure member and cannot be null. However, the destination pointer may be null, and if so, this would result in undefined behavior and potentially a crash. The risk is further confirmed by the tool's classification and verdict. There are no additional safety guards or explicit null checks present, and the memory regions do not overlap, so the main concern is the lack of null pointer validation for the destination.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to prevent undefined behavior if the pointer is invalid.\n\n```c\nif (vers != NULL) {\n    memcpy(vers, &dev->versions, sizeof(caribou_fpga_versions_st));\n} else {\n    // Handle error: destination pointer is null\n}\n```\n\nThis check prevents the function from attempting to write to a null pointer, which would otherwise cause a crash or undefined behavior.\n\n## In Context Remediation 2\nIf the function is expected to always receive a valid destination pointer, document this requirement clearly and consider using assertions in debug builds to catch programming errors early.\n\n```c\nassert(vers != NULL);\nmemcpy(vers, &dev->versions, sizeof(caribou_fpga_versions_st));\n```\n\nThis approach is suitable for internal APIs where null pointers should never be passed, but it does not protect in production builds unless assertions are enabled.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "85cc6682-1fb2-3f9a-9ac4-a5f77d016a0b",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a high risk: the destination buffer's capacity is unknown, and the amount of data being copied is not proven to be within safe bounds. The destination buffer is a pointer type, and there is no evidence that its size is checked or derived from a known capacity. The amount of data copied is determined by a variable expression, which may exceed the actual size of the destination buffer. There are no explicit guards or checks before the copy, and there is no indication that the destination or source pointers are null or overlapping, which reduces the likelihood of some false positives, but the main risk remains due to the lack of bounds checking.\n\n## In Context Remediation 1\nBefore performing the memory copy, ensure that the destination buffer is large enough to hold the number of bytes specified by the copy operation. Add an explicit check to verify that the size of the destination buffer is at least `l * sizeof(T)`. If the size is not guaranteed, either limit `l` or allocate a sufficiently large buffer for `data`.\n\n```cpp\n// Example: Add a check before memcpy\nif (data != nullptr && data_capacity >= l * sizeof(T)) {\n    memcpy(data, buf_ + (tail_ & (max_size_ - 1)), l * sizeof(T));\n} else {\n    // Handle error: insufficient buffer size\n}\n```\n\nIf `data` is dynamically allocated, ensure it is allocated with at least `l * sizeof(T)` bytes before this call.\n\n\n## In Context Remediation 2\nIf the size of the destination buffer cannot be determined at this point, consider using safer alternatives or redesigning the API to always pass the buffer size along with the pointer. For example, use `std::copy` with iterators if possible, or pass the buffer size as an additional argument and check it before copying.\n\n```cpp\n// Example: Pass buffer size and check before copying\nvoid copy_to_data(T* data, size_t data_capacity, size_t l) {\n    if (data != nullptr && data_capacity >= l) {\n        memcpy(data, buf_ + (tail_ & (max_size_ - 1)), l * sizeof(T));\n    } else {\n        // Handle error: insufficient buffer size\n    }\n}\n```\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Glossary: Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')](https://cwe.mitre.org/data/definitions/120.html)\n- [CWE-787: Out-of-bounds Write](https://cwe.mitre.org/data/definitions/787.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-120",
-                    "url": "https://cwe.mitre.org/data/definitions/120.html"
-                  },
-                  {
-                    "id": "CWE-787",
-                    "url": "https://cwe.mitre.org/data/definitions/787.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-120",
-                  "CWE-787"
-                ]
-              }
-            },
-            {
-              "id": "34d9fe10-64c9-3177-9bf2-6fab086bf47b",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the analysis identified a risk of undefined behavior due to the possibility that the destination pointer may be null at the point of the memory copy operation. There are no explicit checks to ensure that the destination pointer is valid before calling the memory copy function. The source expression is not a pointer and is unlikely to be null, but the destination pointer could be null, which would result in undefined behavior if the memory copy is attempted. The absence of a guard or validation for the destination pointer, combined with the lack of evidence that the length is derived from the buffer's capacity, increases the risk. The classification and verdict both indicate a high-confidence issue.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the destination pointer is not null. Add an explicit check to validate the destination buffer pointer before calling the memory copy function. For example:\n\n```cpp\nif (buf_ != nullptr) {\n    memcpy(buf_, data + l, (len - l) * sizeof(T));\n} else {\n    // Handle error: destination buffer is null\n}\n```\nThis prevents undefined behavior by ensuring the destination pointer is valid before use.\n\n## In Context Remediation 2\nIf the destination buffer should never be null by design, consider adding an assertion to catch programming errors during development:\n\n```cpp\nassert(buf_ != nullptr);\nmemcpy(buf_, data + l, (len - l) * sizeof(T));\n```\nThis will terminate the program in debug builds if the destination pointer is unexpectedly null, helping to catch issues early.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "b3cdd703-1f4e-3286-b8ba-72c0e26f2a7c",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is classified as a genuine vulnerability because the analysis identified a risk of undefined behavior due to the possibility that the source pointer may be null at the point of the memory copy operation. There are no explicit checks to ensure that the source pointer is valid before performing the copy. The destination is likely safe, as it is not a pointer expression and appears to be an object or array. The absence of overlap between source and destination further supports the focus on null pointer dereference. The classification and verdict both indicate a high-confidence issue that should be addressed to prevent potential crashes or security vulnerabilities.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, ensure that the source pointer is not null. Add an explicit check to prevent undefined behavior if the source buffer is null.\n\n```cpp\nif (buf_ != nullptr) {\n    memcpy(data + l, buf_, (len - l) * sizeof(T));\n} else {\n    // Handle error: source buffer is null\n    // For example, log an error or throw an exception\n}\n```\n\nThis check ensures that the memory copy only occurs when the source buffer is valid, preventing a potential crash or security issue due to null pointer dereference.\n\n## In Context Remediation 2\nIf the source buffer should never be null by design, add an assertion to catch programming errors during development. This does not protect in production, but helps catch issues early.\n\n```cpp\nassert(buf_ != nullptr);\nmemcpy(data + l, buf_, (len - l) * sizeof(T));\n```\n\nThis approach is suitable if a null source buffer indicates a logic error that should be fixed during development.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [NIST Glossary: Buffer Overflow](https://csrc.nist.gov/glossary/term/buffer_overflow)\n- [CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer](https://cwe.mitre.org/data/definitions/119.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-119",
-                    "url": "https://cwe.mitre.org/data/definitions/119.html"
-                  },
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-119",
-                  "CWE-476"
-                ]
-              }
-            },
-            {
-              "id": "2edc50f4-9027-366c-961b-575bcfb0556e",
-              "name": "Problematic C function detected (memcpy)",
-              "helpUri": "https://www.glog.ai/",
-              "help": {
-                "text": "",
-                "markdown": "This finding is considered a genuine vulnerability because the classification indicates a risk of undefined behavior due to the possibility of a null source pointer, and the verdict is marked as genuine. The code copies memory from a source pointer to a destination buffer, but there is no explicit check to ensure that the source pointer is not null before the operation. If the source pointer is null, this will result in undefined behavior, potentially leading to a crash or security issue. The analysis also confirms that the destination is not likely to be null, and there is no evidence of overlapping memory regions, which reduces the risk of other issues. However, the absence of a guard for the source pointer is a critical concern.\n\n## In Context Remediation 1\nBefore performing the memory copy operation, add an explicit check to ensure that the source pointer is not null. This prevents undefined behavior if the source pointer is invalid.\n\n```cpp\nif (data != nullptr) {\n    memcpy(buf_ + (head_ & (max_size_ - 1)), data, l * sizeof(T));\n} else {\n    // Handle error: source pointer is null\n    // For example, log an error or throw an exception\n}\n```\n\nThis check ensures that the memory copy only occurs when the source pointer is valid, preventing crashes or security issues due to null pointer dereference.\n\n## In Context Remediation 2\nIf the function is not supposed to receive a null source pointer under any circumstances, consider adding an assertion or error handling to catch programming errors early:\n\n```cpp\nassert(data != nullptr);\nmemcpy(buf_ + (head_ & (max_size_ - 1)), data, l * sizeof(T));\n```\n\nThis approach will terminate the program in debug builds if the source pointer is null, helping to catch bugs during development.\n\n## References\n- [OWASP C-Based Toolchain Hardening Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)\n- [CWE-476: NULL Pointer Dereference](https://cwe.mitre.org/data/definitions/476.html)\n- [OWASP Buffer Overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Overflow)\n\n___\n"
-              },
-              "properties": {
-                "cwe": [
-                  {
-                    "id": "CWE-476",
-                    "url": "https://cwe.mitre.org/data/definitions/476.html"
-                  }
-                ],
-                "severity": "LOW",
-                "kind": "FAIL",
-                "tags": [
-                  "CWE-476"
-                ]
               }
             }
           ],
@@ -1015,6 +547,37 @@
       },
       "language": "en-US",
       "results": [
+        {
+          "ruleId": "be6b2f35-69ca-3f49-afe0-e7fd1fe6f12f",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "time.sleep() call; did you mean to leave this in?"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "examples/python/soapy_iq_cal.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 300,
+                  "startColumn": 17,
+                  "endLine": 300,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "                time.sleep(0.1)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "4b46e33eaf768af0aaf08e1463b7e8874bf9fdaed028ddd2b443b7076364b6299be30f280597c8d3ef82a0bd4c784e08c03daab3b19e3d010dd4322eeefb2e9d_0"
+          },
+          "properties": {}
+        },
         {
           "ruleId": "24724d34-6f22-307d-b193-2d2a74626e13",
           "kind": "fail",
@@ -1047,33 +610,33 @@
           "properties": {}
         },
         {
-          "ruleId": "be6b2f35-69ca-3f49-afe0-e7fd1fe6f12f",
+          "ruleId": "ac2ed76d-d3ed-3603-920d-eddc9c82ae48",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "time.sleep() call; did you mean to leave this in?"
+            "text": "Regex `r'BINDTOOL_GEN_AUTOMATIC\\(([^\\s])\\)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "examples/python/soapy_iq_cal.py",
+                  "uri": "software/gr-caribouLite/python/caribouLite/bindings/header_utils.py",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 300,
-                  "startColumn": 17,
-                  "endLine": 300,
-                  "endColumn": 32,
+                  "startLine": 15,
+                  "startColumn": 13,
+                  "endLine": 15,
+                  "endColumn": 75,
                   "snippet": {
-                    "text": "                time.sleep(0.1)"
+                    "text": "        m = re.search(r'BINDTOOL_GEN_AUTOMATIC\\(([^\\s])\\)', self.file_txt)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "4b46e33eaf768af0aaf08e1463b7e8874bf9fdaed028ddd2b443b7076364b6299be30f280597c8d3ef82a0bd4c784e08c03daab3b19e3d010dd4322eeefb2e9d_0"
+            "matchBasedId/v1": "0c83abfeb9c0cdaecd47d7d29a6eb27faccd63214d06ef42e9f74c682c69990fef93f32f2d1d0995c47d8044f12a9e0412bb56e675e036c9e35e773cabc77b32_0"
           },
           "properties": {}
         },
@@ -1109,11 +672,11 @@
           "properties": {}
         },
         {
-          "ruleId": "ac2ed76d-d3ed-3603-920d-eddc9c82ae48",
+          "ruleId": "df4960bd-11d2-35c7-8600-d9136ef76147",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Regex `r'BINDTOOL_GEN_AUTOMATIC\\(([^\\s])\\)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+            "text": "Regex `r'BINDTOOL_USE_PYGCCXML\\(([^\\s])\\)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
           },
           "locations": [
             {
@@ -1123,19 +686,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 15,
+                  "startLine": 24,
                   "startColumn": 13,
-                  "endLine": 15,
-                  "endColumn": 75,
+                  "endLine": 24,
+                  "endColumn": 74,
                   "snippet": {
-                    "text": "        m = re.search(r'BINDTOOL_GEN_AUTOMATIC\\(([^\\s])\\)', self.file_txt)"
+                    "text": "        m = re.search(r'BINDTOOL_USE_PYGCCXML\\(([^\\s])\\)', self.file_txt)"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "0c83abfeb9c0cdaecd47d7d29a6eb27faccd63214d06ef42e9f74c682c69990fef93f32f2d1d0995c47d8044f12a9e0412bb56e675e036c9e35e773cabc77b32_0"
+            "matchBasedId/v1": "d647dba260a2e8671161552175eb91a6a048472d6bb4837bd805d5f0706e6c7bdf2cb7d7634471f6f5310a0f39dceafc1fad5f5cfdbef8f437d5e35684517619_0"
           },
           "properties": {}
         },
@@ -1202,68 +765,6 @@
           "properties": {}
         },
         {
-          "ruleId": "df4960bd-11d2-35c7-8600-d9136ef76147",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r'BINDTOOL_USE_PYGCCXML\\(([^\\s])\\)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/gr-caribouLite/python/caribouLite/bindings/header_utils.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 24,
-                  "startColumn": 13,
-                  "endLine": 24,
-                  "endColumn": 74,
-                  "snippet": {
-                    "text": "        m = re.search(r'BINDTOOL_USE_PYGCCXML\\(([^\\s])\\)', self.file_txt)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "d647dba260a2e8671161552175eb91a6a048472d6bb4837bd805d5f0706e6c7bdf2cb7d7634471f6f5310a0f39dceafc1fad5f5cfdbef8f437d5e35684517619_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "65369937-efb7-34e6-8a5a-eb20ac25cc8f",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "time.sleep() call; did you mean to leave this in?"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/production_utils/python/testlcd.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 116,
-                  "startColumn": 5,
-                  "endLine": 116,
-                  "endColumn": 20,
-                  "snippet": {
-                    "text": "    time.sleep(2.0)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "477124292c3147396aad8a2c7519c54aaa4b6c24a86d513e896d6bcadbd3b76d1586f8b53a541d487cea0457afd0f10e1100888f9887ce380c8ef5b14da7deaf_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "ac5751c1-904e-3519-86a1-2459014be77c",
           "kind": "fail",
           "level": "warning",
@@ -1295,246 +796,30 @@
           "properties": {}
         },
         {
-          "ruleId": "c7243d19-dadc-3f85-a168-ef29f12f99c9",
+          "ruleId": "a49ceeea-1ca7-3d5b-b986-b15ff75acc25",
           "kind": "fail",
-          "level": "note",
+          "level": "warning",
           "message": {
-            "text": "Problematic C function detected (memcpy)"
+            "text": "\"Prohibited C Function Identified\""
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "software/libcariboulite/src/cariboulite_radio.c"
+                  "uri": "software/libcariboulite/src/production_utils/production_testing.c"
                 },
                 "region": {
-                  "startLine": 124,
-                  "startColumn": 1,
-                  "endLine": 126,
-                  "endColumn": 35,
-                  "charOffset": 4725,
-                  "charLength": 143,
-                  "snippet": {
-                    "text": "memcpy (&radio->interrupts, \n\t\t\t(radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24),\n\t\t\tsizeof(cariboulite_radio_irq_st)",
-                    "rendered": {
-                      "text": "memcpy (&radio->interrupts, \n\t\t\t(radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24),\n\t\t\tsizeof(cariboulite_radio_irq_st)",
-                      "markdown": "`memcpy (&radio->interrupts, \n\t\t\t(radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24),\n\t\t\tsizeof(cariboulite_radio_irq_st)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "13df64b80688a29cc5ee86abee68969ae13d6062a45cefb24ddc44c13ee6d3a9",
-            "glog-pfp-ruleFileCode/v1": "51fdca2d703409b986cb5a4c84618f9a2edd21047b6a94c6df9239ef16c8a191"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "51fdca2d703409b986cb5a4c84618f9a2edd21047b6a94c6df9239ef16c8a191"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/cariboulite_radio.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 4725,
-                        "charLength": 143
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&radio->interrupts, <size of &radio->interrupts>,  \n\t\t\t(radio->type == cariboulite_channel_s1g) ? (&irq.radio09) : (&irq.radio24), \n\t\t\tsizeof(cariboulite_radio_irq_st)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "ddb6b915-3c3d-3f07-943a-d6566642738f",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/CaribouLiteRadioCpp.cpp"
-                },
-                "region": {
-                  "startLine": 126,
-                  "startColumn": 8,
-                  "endLine": 126,
-                  "endColumn": 45,
-                  "charOffset": 4480,
-                  "charLength": 37,
-                  "snippet": {
-                    "text": "memcpy(meta, _read_metadata, (size_t)",
-                    "rendered": {
-                      "text": "memcpy(meta, _read_metadata, (size_t)",
-                      "markdown": "`memcpy(meta, _read_metadata, (size_t)`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "cf54d935d4763fcf5515c4da477dab2136d9cdbc40cdb4585f4b223c23af4424",
-            "glog-pfp-ruleFileCode/v1": "7b37f194f34c07c188fd94c38bfde435f91029c0e95e31c4a132332e2101e97e"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "7b37f194f34c07c188fd94c38bfde435f91029c0e95e31c4a132332e2101e97e"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/CaribouLiteRadioCpp.cpp"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 4480,
-                        "charLength": 37
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(meta, <size of meta>,  _read_metadata,  (size_t)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "6ddcc282-846e-3bbb-a8b2-3b939b26914b",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/io_utils/io_utils_spi.c"
-                },
-                "region": {
-                  "startLine": 423,
-                  "startColumn": 8,
-                  "endLine": 423,
-                  "endColumn": 92,
-                  "charOffset": 13134,
-                  "charLength": 84,
-                  "snippet": {
-                    "text": "memcpy (&dev->chips[new_chip_index].hard_dev, hard_dev, sizeof(io_utils_hard_spi_st)",
-                    "rendered": {
-                      "text": "memcpy (&dev->chips[new_chip_index].hard_dev, hard_dev, sizeof(io_utils_hard_spi_st)",
-                      "markdown": "`memcpy (&dev->chips[new_chip_index].hard_dev, hard_dev, sizeof(io_utils_hard_spi_st)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "da805b19a525df5f9ab7ecbaf02d6ca7ffa07391c9bd652eccf622bf8437348f",
-            "glog-pfp-ruleFileCode/v1": "1dcfe87b73fc8fa6416730b0e1c4ce2adedc5437055595c118608e9833166174"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "1dcfe87b73fc8fa6416730b0e1c4ce2adedc5437055595c118608e9833166174"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/io_utils/io_utils_spi.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 13134,
-                        "charLength": 84
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&dev->chips[new_chip_index].hard_dev, <size of &dev->chips[new_chip_index].hard_dev>,  hard_dev,  sizeof(io_utils_hard_spi_st)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "cf929797-df48-3d64-a5b2-28376ddbf33c",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/zf_log/zf_log.c"
-                },
-                "region": {
-                  "startLine": 953,
-                  "startColumn": 1,
-                  "endLine": 953,
+                  "startLine": 289,
+                  "startColumn": 13,
+                  "endLine": 289,
                   "endColumn": 18,
-                  "charOffset": 31824,
-                  "charLength": 17,
+                  "charOffset": 9033,
+                  "charLength": 5,
                   "snippet": {
-                    "text": "memcpy(p, s_p, n)",
+                    "text": "fopen",
                     "rendered": {
-                      "text": "memcpy(p, s_p, n)",
-                      "markdown": "`memcpy(p, s_p, n)`"
+                      "text": "fopen",
+                      "markdown": "`fopen`"
                     }
                   },
                   "sourceLanguage": "c"
@@ -1543,47 +828,69 @@
             }
           ],
           "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "ed838bedeaa4de344ffec2a56bfd334a459dae7383f1e44e5d9b554e301e763f",
-            "glog-pfp-ruleFileCode/v1": "ced05eb5a0a074276d0bbc8e7b8b9c83d6b545e20770e70b7871e76b1a1c4f82"
+            "glog-pfp-ruleFileLineCode/v1": "2a97228f8becdfb521a9d007e70a52d01d5d553260b8d987297c11711d9680d3",
+            "glog-pfp-ruleFileCode/v1": "cc5176a5c5fd7ef031bcd294a4c66a30c7f9a7cd03b166fac980398ee6a75ba1"
           },
           "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "ced05eb5a0a074276d0bbc8e7b8b9c83d6b545e20770e70b7871e76b1a1c4f82"
+            "glog-fp-ruleFileCode/v1": "cc5176a5c5fd7ef031bcd294a4c66a30c7f9a7cd03b166fac980398ee6a75ba1"
           },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/zf_log/zf_log.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 31824,
-                        "charLength": 17
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(p, <size of p>,  s_p,  n)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
           "properties": {
-            "DevSkimSeverity": "BestPractice",
+            "DevSkimSeverity": "Moderate",
             "DevSkimConfidence": "High",
             "tags": [
-              "API.DangerousAPI.ProblematicFunction"
+              "API.DangerousAPI.BannedFunction"
             ]
           }
         },
         {
-          "ruleId": "86f2987b-bc22-31e8-9d65-bdebd57877de",
+          "ruleId": "e7f4cdb0-194b-3405-a75e-2419864dc261",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Prohibited C Function Identified\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "software/libcariboulite/src/production_utils/production_testing.c"
+                },
+                "region": {
+                  "startLine": 317,
+                  "startColumn": 13,
+                  "endLine": 317,
+                  "endColumn": 18,
+                  "charOffset": 9788,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "fopen",
+                    "rendered": {
+                      "text": "fopen",
+                      "markdown": "`fopen`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "93433fa55cba15b5cf99e3d7eb93200dcf48b27e912e159a2bd8a9cbe9ba0b68",
+            "glog-pfp-ruleFileCode/v1": "0fbde2e187ed10c1aa7ecfe160383a61f96c01c98598bbe6fa6a8a5bac0f03a0"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "0fbde2e187ed10c1aa7ecfe160383a61f96c01c98598bbe6fa6a8a5bac0f03a0"
+          },
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "01cee931-d83f-3128-af3f-86e441e854cc",
           "kind": "fail",
           "level": "note",
           "message": {
@@ -1593,20 +900,20 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "software/libcariboulite/src/cariboulite_setup.c"
+                  "uri": "examples/adsb_soapy/modes.c"
                 },
                 "region": {
-                  "startLine": 663,
-                  "startColumn": 14,
-                  "endLine": 663,
-                  "endColumn": 70,
-                  "charOffset": 24846,
-                  "charLength": 56,
+                  "startLine": 385,
+                  "startColumn": 4,
+                  "endLine": 385,
+                  "endColumn": 28,
+                  "charOffset": 13771,
+                  "charLength": 24,
                   "snippet": {
-                    "text": "memcpy(info, &sys->board_info, sizeof(hat_board_info_st)",
+                    "text": "memcpy(msg, aux, bits/8)",
                     "rendered": {
-                      "text": "memcpy(info, &sys->board_info, sizeof(hat_board_info_st)",
-                      "markdown": "`memcpy(info, &sys->board_info, sizeof(hat_board_info_st)`"
+                      "text": "memcpy(msg, aux, bits/8)",
+                      "markdown": "`memcpy(msg, aux, bits/8)`"
                     }
                   },
                   "sourceLanguage": "c"
@@ -1615,11 +922,11 @@
             }
           ],
           "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "68dc78fab1c5771024f074327acf7270e0c2c304c92190d6a77767ba00ba97ff",
-            "glog-pfp-ruleFileCode/v1": "338a5a4885c3f0c490eb68a6bbe75000525c47371dcb75fd52b0662873ccd0ef"
+            "glog-pfp-ruleFileLineCode/v1": "7da69b0461f752a61cb4a3e63a1e1184663e835e12120d8713ab74ed408b3589",
+            "glog-pfp-ruleFileCode/v1": "aa9ed3595ea37c7862edd835b5c6fa562618cdd5c10014a542446d10725616ee"
           },
           "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "338a5a4885c3f0c490eb68a6bbe75000525c47371dcb75fd52b0662873ccd0ef"
+            "glog-fp-ruleFileCode/v1": "aa9ed3595ea37c7862edd835b5c6fa562618cdd5c10014a542446d10725616ee"
           },
           "fixes": [
             {
@@ -1629,16 +936,16 @@
               "artifactChanges": [
                 {
                   "artifactLocation": {
-                    "uri": "software/libcariboulite/src/cariboulite_setup.c"
+                    "uri": "examples/adsb_soapy/modes.c"
                   },
                   "replacements": [
                     {
                       "deletedRegion": {
-                        "charOffset": 24846,
-                        "charLength": 56
+                        "charOffset": 13771,
+                        "charLength": 24
                       },
                       "insertedContent": {
-                        "text": "memcpy_s(info, <size of info>,  &sys->board_info,  sizeof(hat_board_info_st)"
+                        "text": "memcpy_s(msg, <size of msg>,  aux,  bits/8)"
                       }
                     }
                   ]
@@ -1711,150 +1018,6 @@
                       },
                       "insertedContent": {
                         "text": "memcpy_s(aux, <size of aux>,  msg,  msgbits/8)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "f0f94a9f-0a69-3b69-bc17-163d1d3184c5",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/adsb_soapy/modes.c"
-                },
-                "region": {
-                  "startLine": 564,
-                  "startColumn": 1,
-                  "endLine": 564,
-                  "endColumn": 44,
-                  "charOffset": 19549,
-                  "charLength": 43,
-                  "snippet": {
-                    "text": "memcpy(mm->msg, msg, MODE_S_LONG_MSG_BYTES)",
-                    "rendered": {
-                      "text": "memcpy(mm->msg, msg, MODE_S_LONG_MSG_BYTES)",
-                      "markdown": "`memcpy(mm->msg, msg, MODE_S_LONG_MSG_BYTES)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "2876ef5e737c48c9ef736cb1c8db22a24d647dcba56eff079e4dae8d369812cb",
-            "glog-pfp-ruleFileCode/v1": "49ff6b5cbb08de81d12354cdf6d0adf4a740e14d6a2d9f382b302ddd38306f64"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "49ff6b5cbb08de81d12354cdf6d0adf4a740e14d6a2d9f382b302ddd38306f64"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/adsb_soapy/modes.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 19549,
-                        "charLength": 43
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(mm->msg, <size of mm->msg>,  msg,  MODE_S_LONG_MSG_BYTES)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "01cee931-d83f-3128-af3f-86e441e854cc",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/adsb_soapy/modes.c"
-                },
-                "region": {
-                  "startLine": 385,
-                  "startColumn": 4,
-                  "endLine": 385,
-                  "endColumn": 28,
-                  "charOffset": 13771,
-                  "charLength": 24,
-                  "snippet": {
-                    "text": "memcpy(msg, aux, bits/8)",
-                    "rendered": {
-                      "text": "memcpy(msg, aux, bits/8)",
-                      "markdown": "`memcpy(msg, aux, bits/8)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "7da69b0461f752a61cb4a3e63a1e1184663e835e12120d8713ab74ed408b3589",
-            "glog-pfp-ruleFileCode/v1": "aa9ed3595ea37c7862edd835b5c6fa562618cdd5c10014a542446d10725616ee"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "aa9ed3595ea37c7862edd835b5c6fa562618cdd5c10014a542446d10725616ee"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/adsb_soapy/modes.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 13771,
-                        "charLength": 24
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(msg, <size of msg>,  aux,  bits/8)"
                       }
                     }
                   ]
@@ -2015,6 +1178,78 @@
           }
         },
         {
+          "ruleId": "86f2987b-bc22-31e8-9d65-bdebd57877de",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Problematic C function detected (memcpy)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "software/libcariboulite/src/cariboulite_setup.c"
+                },
+                "region": {
+                  "startLine": 663,
+                  "startColumn": 14,
+                  "endLine": 663,
+                  "endColumn": 70,
+                  "charOffset": 24846,
+                  "charLength": 56,
+                  "snippet": {
+                    "text": "memcpy(info, &sys->board_info, sizeof(hat_board_info_st)",
+                    "rendered": {
+                      "text": "memcpy(info, &sys->board_info, sizeof(hat_board_info_st)",
+                      "markdown": "`memcpy(info, &sys->board_info, sizeof(hat_board_info_st)`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "68dc78fab1c5771024f074327acf7270e0c2c304c92190d6a77767ba00ba97ff",
+            "glog-pfp-ruleFileCode/v1": "338a5a4885c3f0c490eb68a6bbe75000525c47371dcb75fd52b0662873ccd0ef"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "338a5a4885c3f0c490eb68a6bbe75000525c47371dcb75fd52b0662873ccd0ef"
+          },
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "software/libcariboulite/src/cariboulite_setup.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 24846,
+                        "charLength": 56
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s(info, <size of info>,  &sys->board_info,  sizeof(hat_board_info_st)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
           "ruleId": "48dbf12d-eb92-368c-817f-0c0a4b16ae55",
           "kind": "fail",
           "level": "note",
@@ -2071,6 +1306,125 @@
                       },
                       "insertedContent": {
                         "text": "memcpy_s(aux, <size of aux>,  msg,  bits/8)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "743e1229-d681-3ba2-9312-5dcdd794b8a0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected Prohibited C Function"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "software/libcariboulite/src/io_utils/io_utils_fs.c"
+                },
+                "region": {
+                  "startLine": 65,
+                  "startColumn": 7,
+                  "endLine": 65,
+                  "endColumn": 12,
+                  "charOffset": 1489,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "fopen",
+                    "rendered": {
+                      "text": "fopen",
+                      "markdown": "`fopen`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "dae9e235561846ad73a2538a9219ff7bba812d4ac69234f3e70900ef7f7ea0c7",
+            "glog-pfp-ruleFileCode/v1": "a5e094fc954a8de9256bcf7499c818b7e8a470921ab7684027a4e6281b2aed30"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "a5e094fc954a8de9256bcf7499c818b7e8a470921ab7684027a4e6281b2aed30"
+          },
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "cf929797-df48-3d64-a5b2-28376ddbf33c",
+          "kind": "fail",
+          "level": "note",
+          "message": {
+            "text": "Problematic C function detected (memcpy)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "software/libcariboulite/src/zf_log/zf_log.c"
+                },
+                "region": {
+                  "startLine": 953,
+                  "startColumn": 1,
+                  "endLine": 953,
+                  "endColumn": 18,
+                  "charOffset": 31824,
+                  "charLength": 17,
+                  "snippet": {
+                    "text": "memcpy(p, s_p, n)",
+                    "rendered": {
+                      "text": "memcpy(p, s_p, n)",
+                      "markdown": "`memcpy(p, s_p, n)`"
+                    }
+                  },
+                  "sourceLanguage": "c"
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "glog-pfp-ruleFileLineCode/v1": "ed838bedeaa4de344ffec2a56bfd334a459dae7383f1e44e5d9b554e301e763f",
+            "glog-pfp-ruleFileCode/v1": "ced05eb5a0a074276d0bbc8e7b8b9c83d6b545e20770e70b7871e76b1a1c4f82"
+          },
+          "fingerprints": {
+            "glog-fp-ruleFileCode/v1": "ced05eb5a0a074276d0bbc8e7b8b9c83d6b545e20770e70b7871e76b1a1c4f82"
+          },
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "software/libcariboulite/src/zf_log/zf_log.c"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 31824,
+                        "charLength": 17
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s(p, <size of p>,  s_p,  n)"
                       }
                     }
                   ]
@@ -2159,7 +1513,7 @@
           }
         },
         {
-          "ruleId": "942b6323-8397-3908-860f-754520add96b",
+          "ruleId": "ddb6b915-3c3d-3f07-943a-d6566642738f",
           "kind": "fail",
           "level": "note",
           "message": {
@@ -2169,33 +1523,33 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
+                  "uri": "software/libcariboulite/src/CaribouLiteRadioCpp.cpp"
                 },
                 "region": {
-                  "startLine": 346,
-                  "startColumn": 5,
-                  "endLine": 346,
-                  "endColumn": 71,
-                  "charOffset": 9171,
-                  "charLength": 66,
+                  "startLine": 126,
+                  "startColumn": 8,
+                  "endLine": 126,
+                  "endColumn": 45,
+                  "charOffset": 4480,
+                  "charLength": 37,
                   "snippet": {
-                    "text": "memcpy(hat->dt_data.dt_data, atom_data, hat->dt_data.dt_data_size)",
+                    "text": "memcpy(meta, _read_metadata, (size_t)",
                     "rendered": {
-                      "text": "memcpy(hat->dt_data.dt_data, atom_data, hat->dt_data.dt_data_size)",
-                      "markdown": "`memcpy(hat->dt_data.dt_data, atom_data, hat->dt_data.dt_data_size)`"
+                      "text": "memcpy(meta, _read_metadata, (size_t)",
+                      "markdown": "`memcpy(meta, _read_metadata, (size_t)`"
                     }
                   },
-                  "sourceLanguage": "c"
+                  "sourceLanguage": "cpp"
                 }
               }
             }
           ],
           "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "9c81f042cc21bedbf318c89a6efadf5d062912c74f1d4126b84cadd3bfdbbb15",
-            "glog-pfp-ruleFileCode/v1": "d25a0e2fe8e1c7c3c96ef757aa54745503a8a846753bdecac05f9b6fec8aaccf"
+            "glog-pfp-ruleFileLineCode/v1": "cf54d935d4763fcf5515c4da477dab2136d9cdbc40cdb4585f4b223c23af4424",
+            "glog-pfp-ruleFileCode/v1": "7b37f194f34c07c188fd94c38bfde435f91029c0e95e31c4a132332e2101e97e"
           },
           "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "d25a0e2fe8e1c7c3c96ef757aa54745503a8a846753bdecac05f9b6fec8aaccf"
+            "glog-fp-ruleFileCode/v1": "7b37f194f34c07c188fd94c38bfde435f91029c0e95e31c4a132332e2101e97e"
           },
           "fixes": [
             {
@@ -2205,376 +1559,16 @@
               "artifactChanges": [
                 {
                   "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
+                    "uri": "software/libcariboulite/src/CaribouLiteRadioCpp.cpp"
                   },
                   "replacements": [
                     {
                       "deletedRegion": {
-                        "charOffset": 9171,
-                        "charLength": 66
+                        "charOffset": 4480,
+                        "charLength": 37
                       },
                       "insertedContent": {
-                        "text": "memcpy_s(hat->dt_data.dt_data, <size of hat->dt_data.dt_data>,  atom_data,  hat->dt_data.dt_data_size)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "51cebc80-e97f-3ae7-aba4-a325b96b5c10",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
-                },
-                "region": {
-                  "startLine": 332,
-                  "startColumn": 5,
-                  "endLine": 332,
-                  "endColumn": 52,
-                  "charOffset": 8688,
-                  "charLength": 47,
-                  "snippet": {
-                    "text": "memcpy(&hat->gpiomap, atom_data, GPIO_MAP_SIZE)",
-                    "rendered": {
-                      "text": "memcpy(&hat->gpiomap, atom_data, GPIO_MAP_SIZE)",
-                      "markdown": "`memcpy(&hat->gpiomap, atom_data, GPIO_MAP_SIZE)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "57bc2c1804e0a38a6f5a0af9dfb41e84b89c39bd5880c673e9b82ec9bb3fd54d",
-            "glog-pfp-ruleFileCode/v1": "c48a484504eb0a81ac8d11c1e92f2ba5517ea2370d0359a368a66647a2827371"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "c48a484504eb0a81ac8d11c1e92f2ba5517ea2370d0359a368a66647a2827371"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 8688,
-                        "charLength": 47
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&hat->gpiomap, <size of &hat->gpiomap>,  atom_data,  GPIO_MAP_SIZE)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "632c69a7-3852-308c-89df-ee38dd0ff436",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
-                },
-                "region": {
-                  "startLine": 324,
-                  "startColumn": 5,
-                  "endLine": 324,
-                  "endColumn": 49,
-                  "charOffset": 8419,
-                  "charLength": 44,
-                  "snippet": {
-                    "text": "memcpy(&hat->vinf.pstr, it, hat->vinf.pslen)",
-                    "rendered": {
-                      "text": "memcpy(&hat->vinf.pstr, it, hat->vinf.pslen)",
-                      "markdown": "`memcpy(&hat->vinf.pstr, it, hat->vinf.pslen)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "2a7cff87938b4d4310c0b769baa997215f0a7acb5ef1038b42237e8aab610e49",
-            "glog-pfp-ruleFileCode/v1": "2387b467521005e491fe1a13998065f20048a128b8dca2a7cc2eeb3e585a2398"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "2387b467521005e491fe1a13998065f20048a128b8dca2a7cc2eeb3e585a2398"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 8419,
-                        "charLength": 44
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&hat->vinf.pstr, <size of &hat->vinf.pstr>,  it,  hat->vinf.pslen)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "c641b40f-d672-300b-8ef3-349608b20d8d",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
-                },
-                "region": {
-                  "startLine": 323,
-                  "startColumn": 5,
-                  "endLine": 323,
-                  "endColumn": 49,
-                  "charOffset": 8345,
-                  "charLength": 44,
-                  "snippet": {
-                    "text": "memcpy(&hat->vinf.vstr, it, hat->vinf.vslen)",
-                    "rendered": {
-                      "text": "memcpy(&hat->vinf.vstr, it, hat->vinf.vslen)",
-                      "markdown": "`memcpy(&hat->vinf.vstr, it, hat->vinf.vslen)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "15769c9dab61f5b57bf41dd2fd158ca23106b9bd00f4265550f723ee6e75fbd6",
-            "glog-pfp-ruleFileCode/v1": "143ee988a4824213d9e2f2850ee0cd766080fb5f2f5d3222220c44e55326cfe8"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "143ee988a4824213d9e2f2850ee0cd766080fb5f2f5d3222220c44e55326cfe8"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 8345,
-                        "charLength": 44
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&hat->vinf.vstr, <size of &hat->vinf.vstr>,  it,  hat->vinf.vslen)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "84339129-0b5b-3903-bd7a-e15cdb66fbfc",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
-                },
-                "region": {
-                  "startLine": 322,
-                  "startColumn": 5,
-                  "endLine": 322,
-                  "endColumn": 47,
-                  "charOffset": 8270,
-                  "charLength": 42,
-                  "snippet": {
-                    "text": "memcpy(&hat->vinf, it, VENDOR_STATIC_SIZE)",
-                    "rendered": {
-                      "text": "memcpy(&hat->vinf, it, VENDOR_STATIC_SIZE)",
-                      "markdown": "`memcpy(&hat->vinf, it, VENDOR_STATIC_SIZE)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "3ff357116be4c32f15d3a1ceb5e22a633efabc295f2ce3a0a73db3cd9a7e64aa",
-            "glog-pfp-ruleFileCode/v1": "5754fbb1d8e0141d8af5e97d9e830cbc891fd5c5a0296ae5012e5573cd3870df"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "5754fbb1d8e0141d8af5e97d9e830cbc891fd5c5a0296ae5012e5573cd3870df"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 8270,
-                        "charLength": 42
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&hat->vinf, <size of &hat->vinf>,  it,  VENDOR_STATIC_SIZE)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "d65d9246-d237-3a5e-b926-13eb255d8236",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/hat/hat.c"
-                },
-                "region": {
-                  "startLine": 306,
-                  "startColumn": 1,
-                  "endLine": 306,
-                  "endColumn": 51,
-                  "charOffset": 7815,
-                  "charLength": 50,
-                  "snippet": {
-                    "text": "memcpy(&hat->header, location, sizeof(hat->header)",
-                    "rendered": {
-                      "text": "memcpy(&hat->header, location, sizeof(hat->header)",
-                      "markdown": "`memcpy(&hat->header, location, sizeof(hat->header)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "05e4f023773366b193efa74f0b59fd8edeabd7890b4dca9ad94dcbc77ecf64ae",
-            "glog-pfp-ruleFileCode/v1": "d3bcfdce358732c8c579fabd4dabebd9d58be227308c647e02fbfc7f5bec9e6d"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "d3bcfdce358732c8c579fabd4dabebd9d58be227308c647e02fbfc7f5bec9e6d"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/hat/hat.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 7815,
-                        "charLength": 50
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(&hat->header, <size of &hat->header>,  location,  sizeof(hat->header)"
+                        "text": "memcpy_s(meta, <size of meta>,  _read_metadata,  (size_t)"
                       }
                     }
                   ]
@@ -2735,78 +1729,6 @@
           }
         },
         {
-          "ruleId": "baeb7f04-a7ee-3a9c-803a-2b20362d6414",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/circular_buffer.h"
-                },
-                "region": {
-                  "startLine": 51,
-                  "startColumn": 2,
-                  "endLine": 51,
-                  "endColumn": 34,
-                  "charOffset": 1146,
-                  "charLength": 32,
-                  "snippet": {
-                    "text": "memcpy(buf_, data + l, (len - l)",
-                    "rendered": {
-                      "text": "memcpy(buf_, data + l, (len - l)",
-                      "markdown": "`memcpy(buf_, data + l, (len - l)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "7cd524dbf6f16e06db49b289c6a091e99abc569606d55ae0bfb1db40cc2480d7",
-            "glog-pfp-ruleFileCode/v1": "84399d8f703572b78398be6af39fec69507648ddc56fbeda2d9be7b328a4ce13"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "84399d8f703572b78398be6af39fec69507648ddc56fbeda2d9be7b328a4ce13"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/circular_buffer.h"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1146,
-                        "charLength": 32
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(buf_, <size of buf_>,  data + l,  (len - l)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
           "ruleId": "6c15f579-3ba0-3cd6-887b-7096230d74d0",
           "kind": "fail",
           "level": "note",
@@ -2859,870 +1781,6 @@
                     {
                       "deletedRegion": {
                         "charOffset": 1081,
-                        "charLength": 60
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(buf_ + (head_ & (max_size_ - 1)), <size of buf_ + (head_ & (max_size_ - 1))>,  data,  l * sizeof(T)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "d555725b-7ecb-3b81-80df-ef17ee426368",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                },
-                "region": {
-                  "startLine": 241,
-                  "startColumn": 1,
-                  "endLine": 241,
-                  "endColumn": 35,
-                  "charOffset": 5187,
-                  "charLength": 34,
-                  "snippet": {
-                    "text": "memcpy (new_node->data, data, len)",
-                    "rendered": {
-                      "text": "memcpy (new_node->data, data, len)",
-                      "markdown": "`memcpy (new_node->data, data, len)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "68480d3841ce06c7a091d7c1af2c9a3bb404c485c17180c8a417df1b98915e6e",
-            "glog-pfp-ruleFileCode/v1": "d711e60390836785823803365d4e91abff82abab4a96f15cce0b835524824442"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "d711e60390836785823803365d4e91abff82abab4a96f15cce0b835524824442"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 5187,
-                        "charLength": 34
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(new_node->data, <size of new_node->data>,  data,  len)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "327e040e-d312-3c03-a795-d2f0315e177e",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                },
-                "region": {
-                  "startLine": 181,
-                  "startColumn": 11,
-                  "endLine": 181,
-                  "endColumn": 46,
-                  "charOffset": 3899,
-                  "charLength": 35,
-                  "snippet": {
-                    "text": "memcpy(data, node->data, node->len)",
-                    "rendered": {
-                      "text": "memcpy(data, node->data, node->len)",
-                      "markdown": "`memcpy(data, node->data, node->len)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "e6b4493898faf8c162db0b53642462d866ba568e99f6679d9f7adca86aaab6eb",
-            "glog-pfp-ruleFileCode/v1": "997373cb97d09cfbf3bbc0d5d76be428a8c4a73f1e7fad3a7a526d0da57d4e34"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "997373cb97d09cfbf3bbc0d5d76be428a8c4a73f1e7fad3a7a526d0da57d4e34"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 3899,
-                        "charLength": 35
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(data, <size of data>,  node->data,  node->len)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "b2a3ca6c-306a-33fb-abc4-3a8859be1deb",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                },
-                "region": {
-                  "startLine": 121,
-                  "startColumn": 11,
-                  "endLine": 121,
-                  "endColumn": 46,
-                  "charOffset": 2700,
-                  "charLength": 35,
-                  "snippet": {
-                    "text": "memcpy(data, node->data, node->len)",
-                    "rendered": {
-                      "text": "memcpy(data, node->data, node->len)",
-                      "markdown": "`memcpy(data, node->data, node->len)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "b02136ec13e716a1235fcd114897d84fbe06bc41b72947213a32e3d9a3b94539",
-            "glog-pfp-ruleFileCode/v1": "ae1fd6cb3576bd07ad9ccfc58cd035f087cb666a826013ebaa66bdecf873a378"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "ae1fd6cb3576bd07ad9ccfc58cd035f087cb666a826013ebaa66bdecf873a378"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/tiny_list.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 2700,
-                        "charLength": 35
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(data, <size of data>,  node->data,  node->len)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "b955b6af-f03e-3a37-85be-8b9b0269c4fa",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/tsqueue.c"
-                },
-                "region": {
-                  "startLine": 194,
-                  "startColumn": 8,
-                  "endLine": 194,
-                  "endColumn": 58,
-                  "charOffset": 5597,
-                  "charLength": 50,
-                  "snippet": {
-                    "text": "memcpy (q->items[q->head].data, buffer, data_size)",
-                    "rendered": {
-                      "text": "memcpy (q->items[q->head].data, buffer, data_size)",
-                      "markdown": "`memcpy (q->items[q->head].data, buffer, data_size)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "2ccc4e77e6618eb7d8c347cfe58d8024203bf02888e613a59daa4c895a696697",
-            "glog-pfp-ruleFileCode/v1": "52fc97ab9d42b9427b42f66657e396b4e713c9174bec937a2276141f563f1b95"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "52fc97ab9d42b9427b42f66657e396b4e713c9174bec937a2276141f563f1b95"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/tsqueue.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 5597,
-                        "charLength": 50
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(q->items[q->head].data, <size of q->items[q->head].data>,  buffer,  data_size)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "0b9da9b4-e4d4-326b-984a-2e4506c5e138",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/datatypes/tsqueue.c"
-                },
-                "region": {
-                  "startLine": 176,
-                  "startColumn": 8,
-                  "endLine": 176,
-                  "endColumn": 58,
-                  "charOffset": 5013,
-                  "charLength": 50,
-                  "snippet": {
-                    "text": "memcpy (q->items[q->head].data, buffer, data_size)",
-                    "rendered": {
-                      "text": "memcpy (q->items[q->head].data, buffer, data_size)",
-                      "markdown": "`memcpy (q->items[q->head].data, buffer, data_size)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "8b5241b328b44d952249102f68b958b3efcdef5b4a46cf53ef56b6a6309169a9",
-            "glog-pfp-ruleFileCode/v1": "3230be6ef5615ec4e647a96bb507d3d7b5bfa1ee1a8ac00f59b78d2a45ab9744"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "3230be6ef5615ec4e647a96bb507d3d7b5bfa1ee1a8ac00f59b78d2a45ab9744"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/datatypes/tsqueue.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 5013,
-                        "charLength": 50
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(q->items[q->head].data, <size of q->items[q->head].data>,  buffer,  data_size)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "6401e98b-3546-3a29-a95c-e6d51d2abb4d",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/at86rf215/at86rf215.c"
-                },
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 4,
-                  "endLine": 28,
-                  "endColumn": 38,
-                  "charOffset": 789,
-                  "charLength": 34,
-                  "snippet": {
-                    "text": "memcpy(chunk_tx + 2, buffer, size)",
-                    "rendered": {
-                      "text": "memcpy(chunk_tx + 2, buffer, size)",
-                      "markdown": "`memcpy(chunk_tx + 2, buffer, size)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "1e2a14ab2f3a6a9f1212b556e416dcbfea0e974dd943e83c0d857d0553f3543f",
-            "glog-pfp-ruleFileCode/v1": "5db710e1842e9b4dd16d57c6a9beb8c15de9a939890985d5929475deaa1079a3"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "5db710e1842e9b4dd16d57c6a9beb8c15de9a939890985d5929475deaa1079a3"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/at86rf215/at86rf215.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 789,
-                        "charLength": 34
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(chunk_tx + 2, <size of chunk_tx + 2>,  buffer,  size)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "cec4b70a-edb9-3401-ada0-98e67df2b54e",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/at86rf215/at86rf215.c"
-                },
-                "region": {
-                  "startLine": 46,
-                  "startColumn": 8,
-                  "endLine": 46,
-                  "endColumn": 42,
-                  "charOffset": 1461,
-                  "charLength": 34,
-                  "snippet": {
-                    "text": "memcpy(buffer, chunk_rx + 2, size)",
-                    "rendered": {
-                      "text": "memcpy(buffer, chunk_rx + 2, size)",
-                      "markdown": "`memcpy(buffer, chunk_rx + 2, size)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "7c0f58613365612cc8859fad7684f8c55e9e1078476c24f0c0971543740e0402",
-            "glog-pfp-ruleFileCode/v1": "1983ce03041a0e99199b3c65fd679cc05b3f9eb5a9d8e40e6bbccf365574fe78"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "1983ce03041a0e99199b3c65fd679cc05b3f9eb5a9d8e40e6bbccf365574fe78"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/at86rf215/at86rf215.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1461,
-                        "charLength": 34
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(buffer, <size of buffer>,  chunk_rx + 2,  size)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "68cc90a0-221b-3c9d-aa66-e6e6f9c0e2a6",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "software/libcariboulite/src/caribou_fpga/caribou_fpga.c"
-                },
-                "region": {
-                  "startLine": 334,
-                  "startColumn": 2,
-                  "endLine": 334,
-                  "endColumn": 64,
-                  "charOffset": 10102,
-                  "charLength": 62,
-                  "snippet": {
-                    "text": "memcpy (vers, &dev->versions, sizeof(caribou_fpga_versions_st)",
-                    "rendered": {
-                      "text": "memcpy (vers, &dev->versions, sizeof(caribou_fpga_versions_st)",
-                      "markdown": "`memcpy (vers, &dev->versions, sizeof(caribou_fpga_versions_st)`"
-                    }
-                  },
-                  "sourceLanguage": "c"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "463e98b11b553d69cee612f79868f7c8acd532905e0349f83110f30e1c8e160c",
-            "glog-pfp-ruleFileCode/v1": "9fde65f3c2b7e5eb629a15f90c69c920f44695a5e9e90b4dbeef6c58e3b3bc49"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "9fde65f3c2b7e5eb629a15f90c69c920f44695a5e9e90b4dbeef6c58e3b3bc49"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "software/libcariboulite/src/caribou_fpga/caribou_fpga.c"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 10102,
-                        "charLength": 62
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(vers, <size of vers>,  &dev->versions,  sizeof(caribou_fpga_versions_st)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "85cc6682-1fb2-3f9a-9ac4-a5f77d016a0b",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                },
-                "region": {
-                  "startLine": 86,
-                  "startColumn": 3,
-                  "endLine": 86,
-                  "endColumn": 63,
-                  "charOffset": 1881,
-                  "charLength": 60,
-                  "snippet": {
-                    "text": "memcpy(data, buf_ + (tail_ & (max_size_ - 1)), l * sizeof(T)",
-                    "rendered": {
-                      "text": "memcpy(data, buf_ + (tail_ & (max_size_ - 1)), l * sizeof(T)",
-                      "markdown": "`memcpy(data, buf_ + (tail_ & (max_size_ - 1)), l * sizeof(T)`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "da1aa03b857375190c9f31ecbbfd49bdac7bb2db4195e9ee9a2db014a8869163",
-            "glog-pfp-ruleFileCode/v1": "a4c01b938f8d232d0e7f992e6c8b865a96eb99b2a06e7702e3f0f1ea59055fc1"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "a4c01b938f8d232d0e7f992e6c8b865a96eb99b2a06e7702e3f0f1ea59055fc1"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1881,
-                        "charLength": 60
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(data, <size of data>,  buf_ + (tail_ & (max_size_ - 1)),  l * sizeof(T)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "34d9fe10-64c9-3177-9bf2-6fab086bf47b",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                },
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 2,
-                  "endLine": 50,
-                  "endColumn": 34,
-                  "charOffset": 1128,
-                  "charLength": 32,
-                  "snippet": {
-                    "text": "memcpy(buf_, data + l, (len - l)",
-                    "rendered": {
-                      "text": "memcpy(buf_, data + l, (len - l)",
-                      "markdown": "`memcpy(buf_, data + l, (len - l)`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "5212fecda56f9ce8521f5eec2b8c62190d7b0adb48cd913389570f82d686c917",
-            "glog-pfp-ruleFileCode/v1": "a206effadb80bc005dc2982fe25860c6ccd0c1110537849c742dbd529a5a472b"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "a206effadb80bc005dc2982fe25860c6ccd0c1110537849c742dbd529a5a472b"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1128,
-                        "charLength": 32
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(buf_, <size of buf_>,  data + l,  (len - l)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "b3cdd703-1f4e-3286-b8ba-72c0e26f2a7c",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                },
-                "region": {
-                  "startLine": 87,
-                  "startColumn": 3,
-                  "endLine": 87,
-                  "endColumn": 35,
-                  "charOffset": 1947,
-                  "charLength": 32,
-                  "snippet": {
-                    "text": "memcpy(data + l, buf_, (len - l)",
-                    "rendered": {
-                      "text": "memcpy(data + l, buf_, (len - l)",
-                      "markdown": "`memcpy(data + l, buf_, (len - l)`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "0b0458480dba7ace9a9760ba2a15b859c2806e986165116c85534d002bb04943",
-            "glog-pfp-ruleFileCode/v1": "beb1e8afdb2b25817da69da3482374f7a6cd6668b39d79ed323c75a2208dcc92"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "beb1e8afdb2b25817da69da3482374f7a6cd6668b39d79ed323c75a2208dcc92"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1947,
-                        "charLength": 32
-                      },
-                      "insertedContent": {
-                        "text": "memcpy_s(data + l, <size of data + l>,  buf_,  (len - l)"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "BestPractice",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "API.DangerousAPI.ProblematicFunction"
-            ]
-          }
-        },
-        {
-          "ruleId": "2edc50f4-9027-366c-961b-575bcfb0556e",
-          "kind": "fail",
-          "level": "note",
-          "message": {
-            "text": "Problematic C function detected (memcpy)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                },
-                "region": {
-                  "startLine": 49,
-                  "startColumn": 2,
-                  "endLine": 49,
-                  "endColumn": 62,
-                  "charOffset": 1063,
-                  "charLength": 60,
-                  "snippet": {
-                    "text": "memcpy(buf_ + (head_ & (max_size_ - 1)), data, l * sizeof(T)",
-                    "rendered": {
-                      "text": "memcpy(buf_ + (head_ & (max_size_ - 1)), data, l * sizeof(T)",
-                      "markdown": "`memcpy(buf_ + (head_ & (max_size_ - 1)), data, l * sizeof(T)`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "glog-pfp-ruleFileLineCode/v1": "e42102fb831658579c03bac4c3336d4b1391ff77198583b25c0610a37446e5ff",
-            "glog-pfp-ruleFileCode/v1": "91a47f10c6dae846c011dc712ffc4345f316bf52dc647525485622ca3ba407c4"
-          },
-          "fingerprints": {
-            "glog-fp-ruleFileCode/v1": "91a47f10c6dae846c011dc712ffc4345f316bf52dc647525485622ca3ba407c4"
-          },
-          "fixes": [
-            {
-              "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
-              },
-              "artifactChanges": [
-                {
-                  "artifactLocation": {
-                    "uri": "examples/cpp_api/async_sample_process/circular_buffer.hpp"
-                  },
-                  "replacements": [
-                    {
-                      "deletedRegion": {
-                        "charOffset": 1063,
                         "charLength": 60
                       },
                       "insertedContent": {
